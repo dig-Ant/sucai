@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<div id="time" style="font-size: 50px;"></div>
+</body>
+<script>
+  // https.+复制此链接，打开Dou音搜索，直接观看视频！
+  // @.+:
+  /**
+  合集标题：奖惩并举，以信为术
+  合集简介：在奖励和惩罚中树立规则，培养自信！
+  合集内作品
+  合集封面
+   
+  * */
+  const timeObj = document.querySelector('#time')
+  setInterval(function(){
+    let date = new Date()
+    let minutes = date.getMinutes()
+    let seconds = date.getSeconds()
+    console.log(minutes,seconds);
+    timeObj.innerHTML = `${minutes}:${seconds}`
+  },1000)
+</script>
+</html>
